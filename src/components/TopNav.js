@@ -14,7 +14,6 @@ const menuConfig = {
                 { text: 'Link 1' },
                 { text: 'Link 2' },
                 { a: <a href='/'>Link 3</a> },
-                // { link: <Link to='/' />}
             ]
         }
     ]
@@ -42,7 +41,6 @@ class TopNav extends Component {
         });
     }
 
-    // renderMenuContainer = (menuItems) => {
     renderMenuContainer = (menuItems) => {
         let menuContainer = (
             <div
@@ -86,7 +84,6 @@ class TopNav extends Component {
     }
 
     renderTopNav = () => {
-        console.log(`menuItems: ${JSON.stringify(menuConfig.menuItems)}`);
         return menuConfig.menuItems.map( menuItem => {
             if(menuItem.dropDownItems){
                 return this.renderDropDownMenu(menuItem);
