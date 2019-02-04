@@ -1,23 +1,8 @@
 import React, { Component } from 'react';
+import { topNavMenuConfig } from './topNavMenuConfig';
 import './TopNav.css';
 
-const menuConfig = {
-    menuItems: [
-        {   menuName: 'home' },
-        {   menuName: 'stuff' },
-        {   menuName: 'link',
-            a: (<a href='/'>{'link'}</a>),
-        },
-        {
-            menuName: 'calc',
-            dropDownItems: [
-                { text: 'Link 1' },
-                { text: 'Link 2' },
-                { a: <a href='/'>Link 3</a> },
-            ]
-        }
-    ]
-}
+const menuConfig = topNavMenuConfig();
 
 class TopNavWithExternalConfig extends Component {
     state = {
@@ -41,6 +26,7 @@ class TopNavWithExternalConfig extends Component {
         });
     }
 
+    // renderMenuContainer = (menuItems) => {
     renderMenuContainer = (menuItems) => {
         let menuContainer = (
             <div
