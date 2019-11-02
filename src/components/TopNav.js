@@ -40,6 +40,7 @@ class TopNav extends Component {
     renderButton = (menuConfig, index) => {
         let menuName = menuConfig.name;
         return (<div key={index} className="dropdown">
+            <Link to={menuConfig.link.to} >
             <button
                 onMouseOver={this.mouseOver}
                 onMouseOut={this.mouseOut}
@@ -48,6 +49,7 @@ class TopNav extends Component {
             >
                 {menuName}
             </button>
+            </Link>
         </div>)
     }
 
