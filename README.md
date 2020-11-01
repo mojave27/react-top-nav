@@ -25,7 +25,7 @@ If you are using AWS Amplify + Cognito for authentication and authorization, you
    <br/>
  
  ### button type should be in the following json format:
-  ```json
+  ```javascript
   {
     name: 'name-goes-here',
     type: 'button',
@@ -37,7 +37,7 @@ If you are using AWS Amplify + Cognito for authentication and authorization, you
    <br/>
  
  ### functionButton type should be in the following json format:
-  ```json
+ ```javascript
   {
     name: 'name-goes-here',
     type: 'functionButton'
@@ -47,7 +47,7 @@ If you are using AWS Amplify + Cognito for authentication and authorization, you
    <br/>
  
  ### dropdown type should be in the following json format:
- ```json
+ ```javascript
   {
     name: 'name-which-appears-on-the-top-level-of-menu-goes-here',
     type: 'dropdown',
